@@ -1,12 +1,13 @@
 {
-  "pages":[
+  "pages": [
+    "pages/test/test",
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"blue",
+  "window": {
+    "backgroundTextStyle": "blue",
     "navigationBarBackgroundColor": "blue",
     "navigationBarTitleText": "ada",
-    "navigationBarTextStyle":"blue"
+    "navigationBarTextStyle": "blue"
   }
 }

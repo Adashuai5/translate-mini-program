@@ -1,0 +1,6 @@
+.test-1{
+  font-size: 20px;
+}
+.test-2{
+  font-size: 40rpx;
+}

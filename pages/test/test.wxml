@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="test-1">Hello ada</view>
+  <view class="test-2" bindtap="showToast">Hello {{name}}</view>
+</view>
