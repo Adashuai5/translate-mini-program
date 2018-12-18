@@ -1,13 +1,31 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/change/change",
+    "pages/history/history"
   ],
   "window": {
-    "backgroundTextStyle": "blue",
-    "navigationBarBackgroundColor": "blue",
-    "navigationBarTitleText": "ada",
-    "navigationBarTextStyle": "blue"
+    "navigationBarBackgroundColor": "#2d8cf0",
+    "navigationBarTextStyle": "#17233d",
+    "navigationBarTitleText": "i-translate",
+    "backgroundColor": "#2b85e4",
+    "backgroundTextStyle": "#f8f8f9"
+  },
+  "tabBar": {
+    "color": "#515a6e",
+    "selectedColor": "#2b85e4",
+    "backgroundColor": "#f8f8f9",
+    "borderStyle": "#2db7f5",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "翻译"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "历史"
+      }
+    ]
   }
 }

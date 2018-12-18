@@ -1,0 +1,6 @@
+//change.js
+
+Page({
+  data: {
+  }
+})

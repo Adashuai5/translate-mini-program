@@ -1,0 +1,6 @@
+//history.js
+
+Page({
+  data: {
+  }
+})
