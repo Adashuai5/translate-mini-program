@@ -7,6 +7,9 @@
       <text class="iconfont icon-menu"></text>
     </navigator>
   </view>
-  <view class="input-area"></view>
-  <view class="copyright"></view>
+  <view class="input-area">
+  </view>
+  <view class="copyright">
+    © 2019 Adashuai5
+  </view> 
 </view>
