@@ -1,1 +1,16 @@
 /**index.wxss**/
+
+/** 修改默认的navigator点击态 **/
+
+.change {
+  color: #808695;
+  font-size: 24rpx;
+  padding: 20rpx 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.change .icon-down {
+  color: #808695;
+  font-size: 20rpx;
+}
