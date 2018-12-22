@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont";
-  src: url('https://at.alicdn.com/t/font_978795_r5krga029er.ttf?t=1545463338126') format('truetype');
+  src: url('https://at.alicdn.com/t/font_978795_x130wetfkvs.ttf?t=1545479243273') format('truetype');
 }
 
 .iconfont {
@@ -13,4 +13,8 @@
 
 .icon-menu:before {
   content: "\e8bd";
+}
+
+.icon-close:before {
+  content: "\e61f";
 }

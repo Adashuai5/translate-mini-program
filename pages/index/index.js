@@ -1,7 +1,21 @@
 //index.js
 
 Page({
-  data:{
-    text: '英文'
+  data: {
+    query: '',
+    hideCloseIcon: true,
+    translation: '',
+    text: '英文',
   },
+  onInput() {
+    this.setData({
+      hideCloseIcon: false
+    })
+  },
+  onTapClose() {
+    this.setData({
+      hideCloseIcon: true,
+      query: ''
+    })
+  }
 })

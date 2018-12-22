@@ -8,6 +8,14 @@
     </navigator>
   </view>
   <view class="input-area">
+    <view class="textarea-wrapper">
+      <textarea placeholder="请输入需要翻译的内容" bindconfirm='onConfirm' bindblur='onConfirm' bindinput='onInput' value='{{query}}'/>
+      <text class='iconfont icon-close' bindtap='onTapClose' hidden="{{hideCloseIcon}}"></text>
+    </view>
+    <view class="text-area">
+      <text class="textarea-title">译文</text>
+      <text class='translation'>{{translation}}</text>
+    </view>
   </view>
   <view class="copyright">
     © 2019 Adashuai5
