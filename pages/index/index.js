@@ -1,21 +1,39 @@
 //index.js
+import { translate } from '../../utils/api.js'
 
 Page({
   data: {
     query: '',
     hideCloseIcon: true,
-    translation: '',
+    translation: [],
     text: '英文',
   },
-  onInput() {
+  onInput(e) {
     this.setData({
-      hideCloseIcon: false
+      'query': e.detail.value
     })
+    if (this.data.query.length > 0) {
+      this.setData({
+        hideCloseIcon: false
+      })
+    } else {
+      this.setData({
+        hideCloseIcon: true
+      })
+    }
   },
   onTapClose() {
     this.setData({
       hideCloseIcon: true,
-      query: ''
+      query: '',
+      translation: ''
+    })
+  },
+  onConfirm() {
+    if(!this.data.query){return}
+    translate(this.data.query, { from: 'en', to: 'zh' }).then((res)=>{
+      console.log(res)
+      this.setData({ translation: res.trans_result })
     })
   }
 })

@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-.input-area .textarea-title {
+.input-area .text-title {
   font-size: 28rpx;
   color: #8995a1;
 }
@@ -50,4 +50,10 @@
   background-color: #fff;
   padding: 40rpx;
   min-height: 80rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area .text-area .translation{
+  padding: 20rpx 0;
 }
