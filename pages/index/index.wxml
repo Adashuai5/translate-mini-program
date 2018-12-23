@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view class="change">
-    <text>当前语言</text>
+    <text>翻译为</text>
     <navigator url="/pages/change/change" hover-class="navigator-hover">
       <text>{{curLang.name}}</text>
       <text class="iconfont icon-menu"></text>
