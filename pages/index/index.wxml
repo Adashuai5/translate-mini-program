@@ -3,7 +3,7 @@
   <view class="change">
     <text>当前语言</text>
     <navigator url="/pages/change/change" hover-class="navigator-hover">
-      <text>{{text}}</text>
+      <text>{{curLang.name}}</text>
       <text class="iconfont icon-menu"></text>
     </navigator>
   </view>

@@ -1,12 +1,23 @@
 //index.js
-import { translate } from '../../utils/api.js'
+import {
+  translate
+} from '../../utils/api.js'
+const app = getApp()
 
 Page({
   data: {
     query: '',
     hideCloseIcon: true,
     translation: [],
-    text: '英文',
+    curLang: {},
+  },
+  onShow() {
+    if (this.data.curLang.lang !== app.globalData.curLang.lang) {
+      this.setData({
+        curLang: app.globalData.curLang
+      })
+      this.onConfirm()
+    }
   },
   onInput(e) {
     this.setData({
@@ -30,10 +41,16 @@ Page({
     })
   },
   onConfirm() {
-    if(!this.data.query){return}
-    translate(this.data.query, { from: 'en', to: 'zh' }).then((res)=>{
-      console.log(res)
-      this.setData({ translation: res.trans_result })
+    if (!this.data.query) {
+      return
+    }
+    translate(this.data.query, {
+      from: 'auto',
+      to: this.data.curLang.lang
+    }).then((res) => {
+      this.setData({
+        translation: res.trans_result
+      })
     })
   }
 })
