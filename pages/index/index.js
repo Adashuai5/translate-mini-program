@@ -11,6 +11,13 @@ Page({
     translation: [],
     curLang: {},
   },
+  onLoad(options) {
+    if (options.query) {
+      this.setData({
+        query: options.query
+      })
+    }
+  },
   onShow() {
     if (this.data.curLang.lang !== app.globalData.curLang.lang) {
       this.setData({
@@ -51,6 +58,14 @@ Page({
       this.setData({
         translation: res.trans_result
       })
+
+      let history = wx.getStorageSync('history') || []
+      history.unshift({
+        query: this.data.query,
+        translation: res.trans_result[0].dst
+      })
+      history.length = history.length > 10 ? 10 : history.length
+      wx.setStorageSync('history', history)
     })
   }
 })
