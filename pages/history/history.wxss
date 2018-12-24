@@ -16,6 +16,7 @@
   border-top: 1rpx solid beige;
   display: flex;
   flex-direction: column;
+  color: #FF355E;
 }
 
 .item .query {

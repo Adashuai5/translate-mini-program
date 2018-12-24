@@ -2,10 +2,10 @@
 <view class="container">
   <view class="input-area">
     <view class="input-title">
-      <text>自动检测输入语言</text>
+      <text>自动检测语言</text>
     </view>
     <view class="textarea-wrapper">
-      <textarea placeholder="请输入需要翻译的内容" bindconfirm='onConfirm' bindblur='onConfirm' bindinput='onInput' value='{{query}}' />
+      <textarea placeholder="您的输入" bindconfirm='onConfirm' bindblur='onConfirm' bindinput='onInput' value='{{query}}' />
       <text class='iconfont icon-close' bindtap='onTapClose' hidden="{{hideCloseIcon}}"></text>
     </view>
     <view class="change">
@@ -16,7 +16,7 @@
       </navigator>
     </view>
     <view class="text-area">
-      <text class="text-title">译文</text>
+      <text class="text-title">爱的回馈</text>
       <text class='translation' wx:for="{{translation}}" wx:key="index" selectable='true'>{{item.dst}}</text>
     </view>
   </view>

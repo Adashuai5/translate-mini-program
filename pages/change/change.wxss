@@ -22,5 +22,5 @@
 }
 
 .item .icon-currect{
-  padding-top: 10rpx;
+  padding-top: 7rpx;
 }

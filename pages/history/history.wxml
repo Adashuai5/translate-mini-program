@@ -1,7 +1,7 @@
 <!--history.wxml-->
 <view class="container">
   <view class='page-history'>
-    <view class='title'>翻译列表</view>
+    <view class='title'>记录一点一滴</view>
     <scroll-view scroll-y="true">
       <view class="item" wx:for='{{history}}' wx:key='index' bindtap='onTapItem' data-query="{{item.query}}" data-langId="{{item.langIndex}}" hover-class='view-hover'>
         <text class='query'>{{item.query}}</text>

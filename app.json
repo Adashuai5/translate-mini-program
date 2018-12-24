@@ -7,7 +7,7 @@
   "window": {
     "navigationBarBackgroundColor": "#9BD770",
     "navigationBarTextStyle": "#17233d",
-    "navigationBarTitleText": "i-translate",
+    "navigationBarTitleText": "爱翻译",
     "backgroundColor": "#2b85e4",
     "backgroundTextStyle": "#f8f8f9"
   },
@@ -20,11 +20,11 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "翻译"
+        "text": "爱上翻译"
       },
       {
         "pagePath": "pages/history/history",
-        "text": "历史"
+        "text": "爱的历程"
       }
     ]
   }

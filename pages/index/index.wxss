@@ -57,4 +57,5 @@
 
 .input-area .text-area .translation {
   padding: 20rpx 0;
+  color: #FF355E;
 }
