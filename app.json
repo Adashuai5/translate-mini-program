@@ -5,15 +5,15 @@
     "pages/history/history"
   ],
   "window": {
-    "navigationBarBackgroundColor": "#2d8cf0",
+    "navigationBarBackgroundColor": "#9BD770",
     "navigationBarTextStyle": "#17233d",
     "navigationBarTitleText": "i-translate",
     "backgroundColor": "#2b85e4",
     "backgroundTextStyle": "#f8f8f9"
   },
   "tabBar": {
-    "color": "#515a6e",
-    "selectedColor": "#2b85e4",
+    "color": "#375F1B",
+    "selectedColor": "#9BD770",
     "backgroundColor": "#f8f8f9",
     "borderStyle": "#2b85e4",
     "position": "top",

@@ -8,7 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 30rpx;
-  color: #333;
+  color: #1B3409;
   background: #f2f6fc;
 }
 
@@ -23,5 +23,5 @@
 }
 
 .view-hover {
-  background-color: #f3f3f3 !important;
+  background-color: #EBF7E3 !important;
 }

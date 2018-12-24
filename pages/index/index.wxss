@@ -1,26 +1,29 @@
 /**index.wxss**/
 
-/** 修改默认的navigator点击态 **/
+.input-area {
+  background-color: #fff;
+  color: #808695;
+}
 
 .change {
-  color: #808695;
   font-size: 24rpx;
   padding: 20rpx 40rpx;
   display: flex;
   align-items: center;
+  background-color: #ebf7e3;
+}
+
+.input-title {
+  font-size: 24rpx;
+  padding: 20rpx 30rpx;
+  background-color: #ebf7e3;
 }
 
 .change .icon-down {
-  color: #808695;
   font-size: 20rpx;
 }
 
-.input-area {
-  background-color: #fff;
-}
-
 .input-area .textarea-wrapper {
-  border-bottom: 2rpx solid #c7cee0;
   display: flex;
 }
 
@@ -46,12 +49,12 @@
 
 .input-area .text-area {
   background-color: #fff;
-  padding: 40rpx;
+  padding: 10rpx 40rpx 40rpx;
   min-height: 80rpx;
   display: flex;
   flex-direction: column;
 }
 
-.input-area .text-area .translation{
+.input-area .text-area .translation {
   padding: 20rpx 0;
 }

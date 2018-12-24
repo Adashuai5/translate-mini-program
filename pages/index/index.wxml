@@ -1,16 +1,19 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="change">
-    <text>翻译为</text>
-    <navigator url="/pages/change/change" hover-class="navigator-hover">
-      <text>{{curLang.name}}</text>
-      <text class="iconfont icon-menu"></text>
-    </navigator>
-  </view>
   <view class="input-area">
+    <view class="input-title">
+      <text>自动检测输入语言</text>
+    </view>
     <view class="textarea-wrapper">
       <textarea placeholder="请输入需要翻译的内容" bindconfirm='onConfirm' bindblur='onConfirm' bindinput='onInput' value='{{query}}' />
       <text class='iconfont icon-close' bindtap='onTapClose' hidden="{{hideCloseIcon}}"></text>
+    </view>
+    <view class="change">
+      <text>翻译为——</text>
+      <navigator url="/pages/change/change" hover-class="navigator-hover">
+        <text>{{curLang.name}}</text>
+        <text class="iconfont icon-menu"></text>
+      </navigator>
     </view>
     <view class="text-area">
       <text class="text-title">译文</text>
