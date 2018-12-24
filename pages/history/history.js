@@ -3,11 +3,14 @@ const app = getApp()
 
 Page({
   data: {
-    history: []
+    history: [],
+    historyLength: ''
   },
   onShow() {
+    let history = wx.getStorageSync('history')
     this.setData({
-      history: wx.getStorageSync('history')
+      history: history,
+      historyLength: history.length
     })
   },
   onTapItem(e) {
